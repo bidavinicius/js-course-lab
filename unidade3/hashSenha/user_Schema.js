@@ -1,4 +1,4 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
     nome: {
@@ -7,11 +7,17 @@ const userSchema = new mongoose.Schema({
     },
     email: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     senha: {
         type: String,
         required: true
+    },
+    Role:{
+        type: [String],
+        enum: ["ADMIN", "USER"],
+        default: "USER"
     }
 })
 

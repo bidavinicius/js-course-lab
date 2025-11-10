@@ -3,13 +3,14 @@ import { Register } from "../user_Schema.js"
 
 export async function addUser(req,res){
     try{
-        const {nome, email, senha} = req.body
+        const {nome, email, senha, Role} = req.body
         const hashSenha = await bcrypt.hash(senha, 12)
 
         await Register.create({
             nome,
             email,
-            senha: hashSenha
+            senha: hashSenha,
+            Role
         })
 
         res.status(200).send("Usuário criado com sucesso")

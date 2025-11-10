@@ -20,7 +20,7 @@ export async function loginUser(req, res) {
       return res.status(500).send("Erro ao criar");
   }
 
-  const token = jwt.sign({ userId: user._id }, secret, {
+  const token = jwt.sign({ userId: user._id, role: user.Role }, secret, {
     expiresIn: "1h",
   });
 
