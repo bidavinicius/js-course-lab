@@ -9,7 +9,7 @@ const port = 3000;
 
 const PepServer = async () => {
   try {
-    await mongoose.connect(process.env.a);
+    await mongoose.connect(process.env.MONGODB_URI);
     console.log("Conectado ao MongoDB.");
     mongoose.connection.on("error", (err) => {
       console.error(`Erro de conexão com o MongoDB: ${err.message}`);
