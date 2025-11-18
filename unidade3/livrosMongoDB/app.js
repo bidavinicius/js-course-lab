@@ -1,13 +1,15 @@
 import express from "express"
 import mongoose from "mongoose"
 import { createBook, deleteBook, getBooks,updateBook } from "./mongoFunctions.js"
+import dotenv from "dotenv"
+
+dotenv.config()
 const app = express()
 const port = 3000
 app.use(express.json())
 
-mongoose.connect(
-    "mongodb+srv://bidaaa:Queimada2017@lions.7omh0jl.mongodb.net/?retryWrites=true&w=majority&appName=Lions"
-  )
+mongoose.connect(process.env.MONGODB_URI
+)
   
   mongoose.connection.once("open", () => {
     console.log("Conectado ao MongoDB")

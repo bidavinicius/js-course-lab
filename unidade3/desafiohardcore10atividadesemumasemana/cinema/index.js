@@ -1,11 +1,13 @@
 import express from "express"
 import mongoose from "mongoose"
 import { router } from "./caminhos.js";
+import dotenv from "dotenv"
+
+dotenv.config()
 
 const app = express();
 const port = 3000;
-mongoose.connect(
-  "mongodb+srv://bidaaa:Queimada2017@lions.7omh0jl.mongodb.net/?retryWrites=true&w=majority&appName=Lions"
+mongoose.connect(process.env.MONGODB_URI
 )
 
 mongoose.connection.once("open", () => {

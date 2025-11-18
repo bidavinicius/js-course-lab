@@ -1,4 +1,4 @@
-import { Item } from "./item_schema.js";
+import { Item } from "../item_schema.js";
 
 const updateItem = async (id, nome, preco, diaSemana) => {
     try{

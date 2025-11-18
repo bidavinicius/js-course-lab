@@ -1,4 +1,4 @@
-import { Item } from "./item_schema.js"
+import { Item } from "../item_schema.js"
 
 const getItem = async() => {
     try{
