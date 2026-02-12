@@ -8,6 +8,8 @@ Originalmente criado como parte de um curso fundamental de JavaScript, fornecido
 ### Tecnologias
 * **JavaScript (ES6+)**
 * **Node.js**
+* **Express.js**
+* **Mongoose**
 * **MongoDB**
 
 ### Estrutura de Pastas
@@ -18,6 +20,10 @@ Originalmente criado como parte de um curso fundamental de JavaScript, fornecido
 └── README.md
 ```
 
+### Projeto Final
+
+O encerramento deste curso consistiu no desenvolvimento de uma API completa, eu escolhi criar um Gerenciador Financeiro. O código completo e a documentação técnica podem ser encontrados aqui: https://github.com/bidavinicius/finance-manager-api
+
 ### Lições Aprendidas
 
 "A maior prova de evolução de um desenvolvedor é olhar para o código de ontem e saber exatamente onde ele pode ser melhorado."
@@ -26,7 +32,6 @@ Este projeto me ensinou a importância de:
   1. Criar uma base sólida de fundamentos para projetos futuros.
   2. Como a jornada é tão importante quanto o resultado final.
   3. Como a refatoração é uma parte essencial do ciclo de vida do software (e do engenheiro por trás do código).
-
 ---
 
 ## Desenvolvido por Vinicius Bida 
